@@ -47,13 +47,6 @@ const Form = () => {
         <input type="submit" />
       </form>
       <div>{JSON.stringify(userInfo, undefined, 2)}</div>
-      <div className="card" style="width: 18rem;">
-        <ul className="list-group list-group-flush">
-          {userInfo.forEach((result) => {
-            return <li>{result.firstName}</li>;
-          })}
-        </ul>
-      </div>
     </div>
   );
 };
