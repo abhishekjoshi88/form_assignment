@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import Card from "./Card";
 
 const Form = () => {
   const [userInfo, setUserInfo] = useState();
@@ -47,6 +48,7 @@ const Form = () => {
         <input type="submit" />
       </form>
       <div>{JSON.stringify(userInfo, undefined, 2)}</div>
+      <Card {...userInfo} />
     </div>
   );
 };
